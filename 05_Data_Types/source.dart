@@ -60,3 +60,19 @@ main() {
   print(
       "9. I am of ${m2.runtimeType} type and my value is $m2. My length is ${m2.length}");
 }
+
+/*
+OUTPUT:
+
+1. I am of int type and my value is 2
+2. I am of double type and my value is 2.2
+3. I am of String type and my value is Kumar Anurag
+4. I am of bool type and my value is true
+5. I am of List<Object> type and my value is [1, 2, 3, Anurag]. My length is 4
+6. I am of List<dynamic> type and my value is [null, null]. My length is 2
+7. I am of List<dynamic> type and my value is [Hello, 5.2, 5]. My length is 3
+8. I am of _InternalLinkedHashMap<dynamic, dynamic> type and my value is {apple: red, banana: yellow, guava: green}. My length is 3
+9. I am of _InternalLinkedHashMap<dynamic, dynamic> type and my value is {1: 100, 2: 2.2, a: anurag}. My length is 3
+Exited
+
+*/

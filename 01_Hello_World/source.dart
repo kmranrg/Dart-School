@@ -13,3 +13,10 @@ NOTE:
 3) A Dart script needs the main() method for execution.
 4) print() is a predefined function that prints the specified string or value to the standard output i.e. the terminal.
 */
+
+/*
+OUTPUT:
+Hello World
+Exited
+
+*/

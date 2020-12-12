@@ -17,3 +17,11 @@ void main() {
   MyClass obj = new MyClass();
   obj.display();
 }
+
+/*
+OUTPUT:
+
+Hello, I am Anurag.
+Exited
+
+*/

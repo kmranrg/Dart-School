@@ -53,3 +53,25 @@ Invalid Identifiers:
 3) first-name // because it contains special character `-`
 4) 1number // because it starts with a number
 */
+
+/*
+OUTPUT:
+
+1.
+2
+Type: int
+
+2.
+2.2
+Type: double
+
+3.
+Anurag
+Type: String
+
+4.
+true
+Type: bool
+Exited
+
+*/

@@ -50,3 +50,17 @@ main() {
   print(
       "6. ${a.toRadixString(2)} > ${b.toRadixString(2)} => Binary Form: ${result}");
 }
+
+/*
+OUTPUT
+
+a = 2 and b = 3
+1. 10 & 11 => Binary Form: 10 | Decimal Form: 2
+2. 10 | 11 => Binary Form: 11 | Decimal Form: 3
+3. 10 ^ 11 => Binary Form: 1 | Decimal Form: 1
+4. ~11 => Binary Form: -100 | Decimal Form: -4
+5. 10 < 11 => Binary Form: true
+6. 10 > 11 => Binary Form: false
+Exited
+
+*/

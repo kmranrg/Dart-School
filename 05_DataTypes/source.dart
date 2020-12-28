@@ -11,7 +11,7 @@ THEORY:
 */
 
 main() {
-  // 1) Numbers: NumbNumbers in Dart are used to represent numeric literals. The Number Dart come in two flavours `int` and `double`
+  // 1) Numbers: Numbers in Dart are used to represent numeric literals. The Number Dart come in two flavours `int` and `double`
 
   // int : int variable can store integer values
   int a = 2;

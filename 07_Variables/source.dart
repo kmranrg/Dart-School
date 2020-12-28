@@ -16,6 +16,14 @@ main() {
   // final keyword : variable declared using final keyword must be initialised and it's value can not be changed.
   final a = 12;
   print("4. I am of ${a.runtimeType} type and my value is $a.");
+
+  /*
+  NOTE: Difference between const and final
+
+  1) The Const keyword in Dart behaves exactly like the final keyword.
+  2) The only difference between final and const is that the const makes the variable constant from compile-time only.
+  3) Using const on an object, makes the object’s entire deep state srtictly fixed at compile-time and that the object with this state will be considered frozen and completely immutable.
+  */
 }
 
 /*

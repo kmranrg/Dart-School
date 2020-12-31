@@ -17,3 +17,11 @@ main() {
   canVote = age >= 18 ? "eligible to vote" : "not eligible to vote";
   print(canVote);
 }
+
+/*
+OUTPUT
+
+eligible to vote
+Exited
+
+*/

@@ -45,3 +45,14 @@ main() {
       break;
   }
 }
+
+/*
+OUTPUT
+
+1. Number is positive.
+2. Even.
+3. Number is positive.
+4. Excellent.
+Exited
+
+*/

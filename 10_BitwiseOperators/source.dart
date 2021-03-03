@@ -9,8 +9,8 @@ Assumption:`a` and `b` are 1 bit numbers in binary form whereas `x` and `y` are 
 2) Bitwise OR (a | b): returns true(1) if any of a and b is true(1) otherwise false(0)
 3) Bitwise XOR (a ^ b): returns true(1) only if a and b are different [means true(1)-false(0) or false(0)-true(1)] otherwise false(0)
 4) Bitwise NOT (~a): inverts the bits of its operand (0 -> 1 and 1 -> 0)
-5) Left Shift (x << y): it is equivalent of [ x / (2 raise to power y) ]
-6) Signpropagating Right Shift (x << y): it is equivalent of [ x * (2 raise to power y) ]
+5) Left Shift (x << y): it is equivalent of [ x * (2 raise to power y) ]
+6) Signpropagating Right Shift (x << y): it is equivalent of [ x / (2 raise to power y) ]. Note: In final result, it ignores the after decimal values
 */
 
 main() {
@@ -42,13 +42,11 @@ main() {
   print(
       "4. ~${b.toRadixString(2)} => Binary Form: ${binaryForm} | Decimal Form: ${result}");
 
-  result = (a < b);
-  print(
-      "5. ${a.toRadixString(2)} < ${b.toRadixString(2)} => Binary Form: ${result}");
+  result = (a << b);
+  print("5. ${a} << ${b} => Binary Form: ${result}");
 
-  result = (a > b);
-  print(
-      "6. ${a.toRadixString(2)} > ${b.toRadixString(2)} => Binary Form: ${result}");
+  result = (a >> b);
+  print("6. ${a} >> ${b} => Binary Form: ${result}");
 }
 
 /*
@@ -59,8 +57,8 @@ a = 2 and b = 3
 2. 10 | 11 => Binary Form: 11 | Decimal Form: 3
 3. 10 ^ 11 => Binary Form: 1 | Decimal Form: 1
 4. ~11 => Binary Form: -100 | Decimal Form: -4
-5. 10 < 11 => Binary Form: true
-6. 10 > 11 => Binary Form: false
+5. 2 << 3 => Binary Form: 16
+6. 2 >> 3 => Binary Form: 0
 Exited
 
 */

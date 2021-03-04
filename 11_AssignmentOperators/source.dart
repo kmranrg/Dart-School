@@ -31,13 +31,6 @@ main() {
 
   a %= b;
   print("a%=b : ${a}");
-
-  int c; // `c` is null here because no value has assigned to it
-  print(c);
-  c ??= 5; // 5 will assign to `c` because c is null
-  print(c);
-  c ??= 7; // 7 will not assign to `c` because c is not null now
-  print(c);
 }
 
 /*
@@ -48,9 +41,6 @@ a-=b : 2
 a*=b' : 6
 a/=b : 2.0
 a%=b : 2.0
-null
-5
-5
 Exited
 
 */

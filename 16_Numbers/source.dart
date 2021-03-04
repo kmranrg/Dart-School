@@ -65,7 +65,7 @@ main() {
   res = e.isEven;
   print("16. I am $res and my data type is ${res.runtimeType}.");
 
-  // isOdd : returns a Boolean value true if the number is an odd number
+  // 6) isOdd : returns a Boolean value true if the number is an odd number
   e = 5;
   res = e.isOdd;
   print("17. I am $res and my data type is ${res.runtimeType}.");
@@ -124,7 +124,7 @@ main() {
   print("30. I am $res and my data type is ${res.runtimeType}.");
 
   // Solution to above problem :-
-  // truncate() : returns an integer after discarding any fractional digits
+  // 8) truncate() : returns an integer after discarding any fractional digits
   e = -2.01;
   res = e.truncate();
   print("31. I am $res and my data type is ${res.runtimeType}.");

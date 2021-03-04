@@ -31,34 +31,22 @@ main() {
   print("4. I am of ${e.runtimeType} type and my value is $e");
 
   // 4) List : it is an ordered group of objects
-  var l1 = [1, 2, 3, "Anurag"]; // literal method
-  // now defining list using constructor method
-  var l2 = new List(2); // here `2` will be the length of list
-  List l3 = new List(3); // here `3` will be the length of list
-  l3[0] = "Hello";
-  l3[1] = 5.2;
-  l3[2] = 5;
+  var l = [1, 2, 3, "Anurag"]; // literal method
   print(
-      "5. I am of ${l1.runtimeType} type and my value is $l1. My length is ${l1.length}");
-  print(
-      "6. I am of ${l2.runtimeType} type and my value is $l2. My length is ${l2.length}");
-  print(
-      "7. I am of ${l3.runtimeType} type and my value is $l3. My length is ${l3.length}");
+      "5. I am of ${l.runtimeType} type and my value is $l. My length is ${l.length}");
 
   // 5) Map : it represents a set of values as key-value pairs
-  Map m1 = {
-    "apple": "red",
-    "banana": "yellow",
-    "guava": "green"
-  }; // literal method
+  // literal method
+  Map m1 = {"apple": "red", "banana": "yellow", "guava": "green"};
+  // using new keyword
   Map m2 = new Map();
   m2[1] = 100;
   m2[2] = 2.2;
   m2["a"] = "anurag";
   print(
-      "8. I am of ${m1.runtimeType} type and my value is $m1. My length is ${m1.length}");
+      "6. I am of ${m1.runtimeType} type and my value is $m1. My length is ${m1.length}");
   print(
-      "9. I am of ${m2.runtimeType} type and my value is $m2. My length is ${m2.length}");
+      "7. I am of ${m2.runtimeType} type and my value is $m2. My length is ${m2.length}");
 }
 
 /*
@@ -69,10 +57,8 @@ OUTPUT:
 3. I am of String type and my value is Kumar Anurag
 4. I am of bool type and my value is true
 5. I am of List<Object> type and my value is [1, 2, 3, Anurag]. My length is 4
-6. I am of List<dynamic> type and my value is [null, null]. My length is 2
-7. I am of List<dynamic> type and my value is [Hello, 5.2, 5]. My length is 3
-8. I am of _InternalLinkedHashMap<dynamic, dynamic> type and my value is {apple: red, banana: yellow, guava: green}. My length is 3
-9. I am of _InternalLinkedHashMap<dynamic, dynamic> type and my value is {1: 100, 2: 2.2, a: anurag}. My length is 3
+6. I am of _InternalLinkedHashMap<dynamic, dynamic> type and my value is {apple: red, banana: yellow, guava: green}. My length is 3
+7. I am of _InternalLinkedHashMap<dynamic, dynamic> type and my value is {1: 100, 2: 2.2, a: anurag}. My length is 3
 Exited
 
 */

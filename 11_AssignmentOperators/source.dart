@@ -31,6 +31,14 @@ main() {
 
   a %= b;
   print("a%=b : ${a}");
+
+  var c;
+  c = null; // now value of `c` is `null`
+  print("I am $c and my data type is ${c.runtimeType}.");
+  c ??= 5; // since, value of `c` is `null` so 5 will assign to `c`
+  print("I am $c and my data type is ${c.runtimeType}.");
+  c ??= 7; // since, value of `c` is not `null` so 7 will not assign to `c`
+  print("I am $c and my data type is ${c.runtimeType}.");
 }
 
 /*
@@ -41,6 +49,9 @@ a-=b : 2
 a*=b' : 6
 a/=b : 2.0
 a%=b : 2.0
+I am null and my data type is Null.
+I am 5 and my data type is int.
+I am 5 and my data type is int.
 Exited
 
 */

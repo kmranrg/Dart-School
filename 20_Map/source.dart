@@ -43,7 +43,7 @@ main() {
   res = moon.isEmpty;
   print("7. $res | Data-Type: ${res.runtimeType}");
 
-  // 5) isEmpty: returns true if map has atleast one item
+  // 5) isNotEmpty: returns true if map has atleast one item
   res = moon.isNotEmpty;
   print("8. $res | Data-Type: ${res.runtimeType}");
 
